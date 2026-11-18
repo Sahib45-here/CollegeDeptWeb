@@ -1,27 +1,87 @@
-  <section class="faculty-section" style="padding: 40px 0; background: white;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty | School of Computer Applications, LPU</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">SCA | LPU</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faculty.html" class="active">Faculty</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="placements.html">Placements</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero">
     <div class="container">
-      <h2 style="color: #0F172A; margin-bottom: 16px;">Meet Our Faculty</h2>
-      <p style="color: #475569; margin-bottom: 32px;">Our faculty members bring a wealth of academic and industry experience.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-        
-        <!-- Faculty 1 -->
-        <div style="border: 1px solid #E2E8F0; padding: 20px; border-radius: 8px;">
-          <h3 style="color: #4F46E5; margin-bottom: 4px;">Dr. Rajesh Kumar</h3>
-          <p style="color: #0F172A; font-weight: bold; font-size: 0.9rem; margin-bottom: 12px;">Professor & Head of Department</p>
-          <p style="color: #475569; font-size: 0.95rem;"><strong>Qualification:</strong> Ph.D. in Computer Science</p>
-          <p style="color: #475569; font-size: 0.95rem;"><strong>Research Area:</strong> Artificial Intelligence, Machine Learning</p>
-        </div>
-
-        <!-- Faculty 2 -->
-        <div style="border: 1px solid #E2E8F0; padding: 20px; border-radius: 8px;">
-          <h3 style="color: #4F46E5; margin-bottom: 4px;">Dr. Anita Sharma</h3>
-          <p style="color: #0F172A; font-weight: bold; font-size: 0.9rem; margin-bottom: 12px;">Associate Professor</p>
-          <p style="color: #475569; font-size: 0.95rem;"><strong>Qualification:</strong> Ph.D. in Information Security</p>
-          <p style="color: #475569; font-size: 0.95rem;"><strong>Research Area:</strong> Cyber Security, Network Protocols</p>
-        </div>
-
-      </div>
-      <p style="margin-top: 24px; color: #64748B; font-style: italic;">(Note: The interactive domain filter will be added on Day 4).</p>
+      <h1>Our Faculty</h1>
+      <p>Meet the experienced academicians and researchers of our department.</p>
     </div>
   </section>
+
+  <section class="page-section">
+    <div class="container">
+      <h2 class="section-heading">Faculty Directory</h2>
+      <p class="section-subtext">Our faculty members bring a wealth of academic and industry experience.</p>
+      
+      <div class="faculty-grid">
+        <div class="faculty-card">
+          <h3 class="faculty-name">Dr. Rajesh Kumar</h3>
+          <p class="faculty-designation">Professor & Head of Department</p>
+          <p class="faculty-detail"><strong>Qualification:</strong> Ph.D. in Computer Science</p>
+          <p class="faculty-detail"><strong>Research Area:</strong> Artificial Intelligence, Machine Learning</p>
+        </div>
+
+        <div class="faculty-card">
+          <h3 class="faculty-name">Dr. Anita Sharma</h3>
+          <p class="faculty-designation">Associate Professor</p>
+          <p class="faculty-detail"><strong>Qualification:</strong> Ph.D. in Information Security</p>
+          <p class="faculty-detail"><strong>Research Area:</strong> Cyber Security, Network Protocols</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>School of Computer Applications</h3>
+        <p>Lovely Professional University, Phagwara, Punjab — 144411.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About Department</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: sca@lpu.co.in</p>
+        <p>Phone: +91-1824-517000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 School of Computer Applications, LPU. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
