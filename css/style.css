@@ -135,3 +135,41 @@ h1, h2, h3 { line-height: 1.3; }
 .contact-layout { display: flex; gap: var(--space-lg); flex-wrap: wrap; }
 .contact-info { flex: 1; min-width: 300px; }
 .form-placeholder { flex: 1; min-width: 300px; background: var(--color-bg); padding: var(--space-md); border-radius: var(--radius); border: 1px solid var(--color-border); }
+/* =====================================================
+   9. DARK MODE OVERRIDES
+   ===================================================== */
+body.dark-mode {
+  /* Override the design tokens for dark mode */
+  --color-primary: #0F172A;      /* Keep header dark */
+  --color-bg: #1E293B;           /* Dark slate background */
+  --color-white: #0F172A;        /* Make cards dark */
+  --color-text: #F8FAFC;         /* White text */
+  --color-text-muted: #CBD5E1;   /* Light grey text */
+  --color-border: #334155;       /* Darker borders */
+}
+
+/* Fix specific elements that need explicit color changes in dark mode */
+body.dark-mode .hero {
+  background: #020617; /* Even darker hero section */
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .highlight-card,
+body.dark-mode .faculty-card,
+body.dark-mode .facility-card,
+body.dark-mode .info-box,
+body.dark-mode .stat-box,
+body.dark-mode .form-placeholder {
+  background: #0F172A; /* Dark background for cards */
+  border-color: #334155;
+}
+
+body.dark-mode .content-text,
+body.dark-mode .custom-list,
+body.dark-mode .faculty-detail {
+  color: #CBD5E1;
+}
+
+body.dark-mode .site-header {
+  border-bottom: 1px solid #334155;
+}
